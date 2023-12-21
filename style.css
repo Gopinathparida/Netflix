@@ -1,0 +1,392 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(/image/IN-en-20231218-popsignuptwoweeks-perspective_alpha_website_largeo.jpg);
+  height: 94vh;
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-position: no-repeat;
+  position: relative;
+}
+.main .box {
+  height: 94vh;
+  width: 100%;
+  opacity: 0.56;
+  position: absolute;
+  top: 0;
+  background-color: #000000;
+}
+nav {
+  display: flex;
+  max-width: 100vw;
+  margin: auto;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+nav img {
+  position: relative;
+  z-index: 100;
+  width: 130px;
+}
+.hero {
+  height: calc(100% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  gap: 12px;
+  padding: 0px 30px;
+}
+.hero .h1 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+}
+.hero .h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+.hero .h3 {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+button {
+  color: white;
+  background-color: red;
+  cursor: pointer;
+  opacity: 1;
+  font-weight: 400;
+}
+.flex {
+  position: relative;
+  z-index: 1;
+}
+.flex > :nth-child(2) {
+  font-weight: 400;
+  margin: 10px;
+  padding: 3px 6px;
+}
+.flex > :nth-child(1) {
+  background-color: black;
+  margin: 10px;
+  padding: 3px 6px;
+}
+.user input {
+    margin: 10px 10px;
+    padding: 15px 138px 15px 12px;
+    background-color: #0000008d;
+    color: white;
+    font-weight: 700;
+}
+.user button{
+    margin: 10px 10px;
+    padding: 13px 44px 15px 38px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.separation{
+    height: 9px;
+    background-color: rgb(72, 72, 72);
+}
+.first{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 80vw;
+  margin: auto;
+  color: white;
+  margin-bottom: 85px;
+  margin-top: 85px;
+  
+}
+.first>div :nth-child(1){
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.first>div :nth-child(2){
+  font-size: 24px;
+  font-size: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.secImg{
+  position: relative;
+}
+.secImg img{
+  padding: 20px;
+  width: 555px;
+  position: relative;
+  z-index: 6;
+}
+.secImg video{
+  position: absolute;
+    width: 401px;
+    top: 105px;
+    right: 98px;
+}
+
+.first .secImg >.vs{
+  width: 340px;
+  top: 55px;
+  right: 131px;
+  opacity: 0.48;
+  position: absolute;
+}
+.first .small{
+  display: flex;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    width: 310px;
+    border-radius: 8px;
+    padding: 0px 5px 4px 0px;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 45px;
+    right: 138px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0);
+}
+.first .small img{
+  height: 50px;
+  width: 50px;
+}
+.first .small ul li{
+  font-size: 16px;
+  font-weight: 500;
+  list-style-type: none;
+  /* padding-left: 17px; */
+}
+.first .small ul li:nth-child(2){
+  color: blue;
+  padding-right: 28px;
+}
+.section2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap:18px;
+  margin-top: 45px;
+    margin-bottom: 108px;
+}
+.section2 h2{
+  text-align: center;
+    font-size: 48px;
+    font-weight: 800;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section2 .question{
+  transition: all 1s ease-out;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  font-size: 25px;
+  margin: auto;
+  width: 70vw;
+  padding: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.section2 .question svg{
+  filter: invert(1);
+}
+.section2 .question:hover{
+  background-color: rgb(187, 175, 175);
+  color: rgb(255, 255, 255);
+}
+
+
+.section3{
+margin-top: 80px;
+}
+.section3 .head{
+  color: white;
+  padding: 30px;
+  font-size: 18px;
+  max-width: 70vw;
+  margin: auto;
+}
+.section3 .head a{
+  color: white;
+}
+
+.section3 .footer{
+  display: grid;
+  grid-template-columns: repeat(4,200px);
+  align-content: center;
+  justify-content: center;
+  gap: 28px;
+  padding: 15px;
+}
+.section3 .footer >a{
+  color: white;
+  /* text-decoration: none; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  justify-content: center;
+}
+.section3 .footer select{
+  background-color: #101010;
+  color: white;
+  padding: 10px 34px 10px 8px;
+  width: 8vw;
+  font-size: medium;
+}
+.section3 .footer li{
+  list-style-type: none;
+  color: white;
+}
+
+@media screen and (max-width:1300px){
+  .secImg img {
+    width: 305px;
+}
+
+.secImg video {
+  width: 223px;
+  top: 67px;
+  left: 61px;
+}
+
+.first .small {
+  width: 254px;
+  padding: 0px 5px 0px 0px;
+  top: 182px;
+  right: 39px;
+  height: 70px;
+}
+.first .secImg >.vs {
+  width: 185px;
+  top: 48px;
+  left: 80px;
+  
+}
+  .first{
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .secImg video{
+    overflow: hidden;
+  }
+  .section3 .footer{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    align-items: center;
+  }
+  .user button{
+    padding: 7px;
+  }
+  .user input{
+    padding: 11px 0px 10px 10px;
+  }
+  svg{
+    width: 16px;
+  }
+  .section3 .footer select {
+    width: 25vw;
+}
+footer {
+  max-width: 90vw;
+  padding: 75px 0;
+}
+
+.footer-item{
+  align-items: center;
+}
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.faq {
+  background: black;
+  color: white;
+  padding: 34px;
+}
+
+.faqbox:hover {
+  background-color: #414141;
+  color: white;
+}
+
+.faqbox svg {
+  filter: invert(1);
+}
+
+.faqbox {
+  transition: all 1s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+}
+@media screen and (max-width: 1300px) {
+
+  .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+  }
+}
+
+
+.footer a {
+  font-size: 14px;
+  color: white;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.footer-item select{
+    padding: 5px 3px 5px 2px;
+    margin: 1px 134px 0px 0px;
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 1300px) {
+  .footer-item select {
+    padding: 5px 3px 5px 2px;
+    margin: 1px 134px 0px 136px;
+}
+}
+.questions a{
+  color: white;
+}
+li{
+  list-style-type: none;
+}
